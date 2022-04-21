@@ -1,0 +1,32 @@
+/*
+Создать скрипт SampleScript(или своё название), в котором будет прописан абстрактный метод Use().
+Также создать скрипт, который хранит список всех SampleScript и вызовом одного метода может запустить Use() у каждого.
+Создать скрипт-наследник SampleScript для перемещения объекта: 
+скрипт добавляется на объект, задаётся скорость перемещения и точка, куда объект должен переместиться. 
+Старт перемещения вызывается переопределённым публичным методом Use(). 
+Пояснение: Ваш объект находится в точке (0,0,0) целевая точка (3,0,0). 
+Если один раз вызвать метод Use(), то ваш объект за 3 секунды 
+(при заданной скорости перемещения = 1 пункт в секунду) плавно доберётся до целевой точки.
+*/
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SampleManager : MonoBehaviour
+{
+    private SampleScript[] objects;
+    
+    private void Start()
+    {
+        objects = FindObjectsOfType<SampleScript>();
+    }
+
+    [ContextMenu("Poll")]
+    public void Poll()
+    {
+        foreach (var obj in objects)
+        {
+            obj.Use();
+        }
+    }
+}
