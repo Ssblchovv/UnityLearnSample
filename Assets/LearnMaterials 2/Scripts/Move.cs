@@ -35,6 +35,7 @@ public class Move : SampleScript
             if (Vector3.Distance(transform.position, endPosition) <= Mathf.Epsilon)
             {
                 moving = false;
+                Debug.Log(cummsumTime);
             }
         }
     }
