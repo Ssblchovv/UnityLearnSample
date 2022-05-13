@@ -1268,6 +1268,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086362, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: rotateSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086362, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: targetRotation.x
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086362, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: targetRotation.y
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086362, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: targetRotation.z
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 7606754730814086363, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
       propertyPath: m_Name
       value: Rotator

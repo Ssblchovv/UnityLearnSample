@@ -5,27 +5,30 @@ using UnityEngine;
 public class Vrashenie : SampleScript
 {
     [SerializeField]
-    float rotateSpeed;
-    float rotationAmt;
+    private float rotateSpeed;
+
+    [SerializeField]
+    Vector3 targetRotation;
     bool rotateting = false;
-    float totalRotation = 0;
+
+    Quaternion startRot;
+    Quaternion endRot;
+    float t;
 
     
     public void Start()
     {
-        rotationAmt = rotateSpeed * Time.deltaTime;
+        startRot = transform.rotation;
+        endRot = Quaternion.Euler(targetRotation);
+        t = 0;
     }
 
     public void Update()
     {
-        if (rotateting)
+        if (rotateting && t<1)
         {
-            if (totalRotation < 90)
-            {
-                Debug.Log(rotationAmt);
-                transform.Rotate(rotationAmt, 0, 0);
-                totalRotation += rotationAmt;
-            }
+            t += rotateSpeed * Time.deltaTime;
+            transform.rotation = Quaternion.Lerp(startRot, endRot, t);
         }
     }
     [ContextMenu("Вращение")]

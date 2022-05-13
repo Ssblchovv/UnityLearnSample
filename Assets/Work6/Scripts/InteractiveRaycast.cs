@@ -25,7 +25,6 @@ public class InteractiveRaycast : MonoBehaviour
             if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out RaycastHit info))
             {
                 var tr = info.transform;
-                // инструментальная 12 ст 35 мед юнион
                 if (tr.CompareTag("InteractivePlane"))
                 {
                     if (prefab == null) return;

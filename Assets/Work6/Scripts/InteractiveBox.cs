@@ -12,7 +12,7 @@ public class InteractiveBox : MonoBehaviour
     void Update()
     {
         if (this.next == null) return;
-        Debug.DrawLine(this.transform.position, this.next.transform.position, Color.yellow);
+        
 
         var dir = (this.next.transform.position - transform.position).normalized;
         if (Physics.Raycast(this.transform.position, dir, out RaycastHit info))
@@ -22,7 +22,11 @@ public class InteractiveBox : MonoBehaviour
             {
                 oi.GetDamage(Time.deltaTime);
             }
+            Debug.DrawLine(this.transform.position, info.point, Color.yellow);
+            return;
         }
+
+        Debug.DrawLine(this.transform.position, this.next.transform.position, Color.yellow);
     }
 
     public void AddNext(InteractiveBox box)
