@@ -543,7 +543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2373445528334643100, guid: 995a83b9aaa8ee74c8f2f688fd3362a8, type: 3}
       propertyPath: onDestroyObstacle.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2373445528334643100, guid: 995a83b9aaa8ee74c8f2f688fd3362a8, type: 3}
       propertyPath: onDestroyObstacle.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -552,7 +552,7 @@ PrefabInstance:
     - target: {fileID: 2373445528334643100, guid: 995a83b9aaa8ee74c8f2f688fd3362a8, type: 3}
       propertyPath: onDestroyObstacle.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1542367608}
     - target: {fileID: 2373445528334643100, guid: 995a83b9aaa8ee74c8f2f688fd3362a8, type: 3}
       propertyPath: onDestroyObstacle.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -567,7 +567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2373445528334643100, guid: 995a83b9aaa8ee74c8f2f688fd3362a8, type: 3}
       propertyPath: onDestroyObstacle.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_name
+      value: Use
       objectReference: {fileID: 0}
     - target: {fileID: 2373445528334643100, guid: 995a83b9aaa8ee74c8f2f688fd3362a8, type: 3}
       propertyPath: onDestroyObstacle.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -575,7 +575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2373445528334643100, guid: 995a83b9aaa8ee74c8f2f688fd3362a8, type: 3}
       propertyPath: onDestroyObstacle.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: Vrashenie, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2373445528334643100, guid: 995a83b9aaa8ee74c8f2f688fd3362a8, type: 3}
       propertyPath: onDestroyObstacle.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -887,6 +887,74 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a454f09fc610d8242aad6955143f07c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1542367607
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7606754730814086358, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086358, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086358, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.3075292
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086358, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086358, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086358, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086358, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086358, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086358, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086358, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086358, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606754730814086363, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+      propertyPath: m_Name
+      value: Rotator
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+--- !u!114 &1542367608 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7606754730814086362, guid: a405c76ec39cb2f418718365f7d82252, type: 3}
+  m_PrefabInstance: {fileID: 1542367607}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9cc88e678fb33648bcdeb231aa5b020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1542951737
